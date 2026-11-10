@@ -15,7 +15,7 @@
         "id": 1,
         "title": "DFD Nivel 2",
         "diagramType": "Generic",
-        "placeholder": "Sistema de puntajes de gimnasia. DFD de la página 69 de la presentación de Diseño Seguro de Software.",
+        "placeholder": "Sistema de puntajes de gimnasia con tablero web público. Basado en el DFD de la página 69 y la arquitectura final del práctico.",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.6.2",
         "cells": [
@@ -49,7 +49,9 @@
                 "b5bccb18-d86d-4fa0-ba26-2c3950e975a8",
                 "f6ff5c43-59fe-4ee5-9337-41dea9392c1a",
                 "9618058c-1f41-478e-8511-02c6044f8390",
-                "3c1627d7-3d5e-4638-ba96-c51a5d5a37e0"
+                "3c1627d7-3d5e-4638-ba96-c51a5d5a37e0",
+                "9911e5fa-8470-4dc0-b2a3-078d7f51240c",
+                "16635b89-924b-409f-a6d0-05342c71fc4f"
               ],
               "containedElements": [
                 "9b7e9419-50cf-4231-b67e-a770ded50f5e",
@@ -156,7 +158,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "917bf2b2-0f55-4e84-9bad-cdc0aa042b76"
+                "917bf2b2-0f55-4e84-9bad-cdc0aa042b76",
+                "e1750f3c-c708-41e3-962d-0d36c26ef799",
+                "9911e5fa-8470-4dc0-b2a3-078d7f51240c",
+                "16635b89-924b-409f-a6d0-05342c71fc4f"
               ],
               "containedElements": [
                 "c448c70a-3cde-4812-b4c6-7537d5678ea1"
@@ -2192,37 +2197,227 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "12",
-              "description": "",
+              "name": "12 · Solicitud de puntajes",
+              "description": "El usuario solicita la página pública de puntajes.",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
               "threats": [],
               "trustBoundaryIds": [
                 "64e9245f-fbb9-4333-a3da-4314e5b3cdc2"
               ]
             },
             "labels": [
-              "12"
+              "12 · Solicitud de puntajes"
             ],
             "id": "917bf2b2-0f55-4e84-9bad-cdc0aa042b76",
             "source": {
-              "x": 948,
-              "y": -125
+              "cell": "ebad6d05-0538-466e-b394-89b020b87285",
+              "port": "4b9c5af9-a80c-451c-a1d9-252850cc5882"
             },
             "target": {
               "cell": "c448c70a-3cde-4812-b4c6-7537d5678ea1",
-              "port": "19641857-b7d4-47df-af89-58ba635047e8"
+              "port": "3330d7e0-48e9-41ca-b554-27ccbff8705b"
             },
             "vertices": [
               {
-                "x": 970,
-                "y": -40
+                "x": 819,
+                "y": -146
+              },
+              {
+                "x": 788,
+                "y": -99
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "13 · Página de puntajes",
+              "description": "El tablero devuelve la página con los puntajes publicados.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": [
+                "64e9245f-fbb9-4333-a3da-4314e5b3cdc2"
+              ]
+            },
+            "labels": [
+              "13 · Página de puntajes"
+            ],
+            "id": "e1750f3c-c708-41e3-962d-0d36c26ef799",
+            "source": {
+              "cell": "c448c70a-3cde-4812-b4c6-7537d5678ea1",
+              "port": "19641857-b7d4-47df-af89-58ba635047e8"
+            },
+            "target": {
+              "cell": "ebad6d05-0538-466e-b394-89b020b87285",
+              "port": "f945a8ff-3f17-4138-84be-9db49f3c8a15"
+            },
+            "vertices": [
+              {
+                "x": 969,
+                "y": 4
+              },
+              {
+                "x": 980,
+                "y": -73
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "14 · Consulta de puntajes",
+              "description": "El tablero solicita a REST los puntajes destinados a publicación. La consulta es de solo lectura.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [],
+              "trustBoundaryIds": [
+                "64e9245f-fbb9-4333-a3da-4314e5b3cdc2",
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7"
+              ]
+            },
+            "labels": [
+              "14 · Consulta de puntajes"
+            ],
+            "id": "9911e5fa-8470-4dc0-b2a3-078d7f51240c",
+            "source": {
+              "cell": "c448c70a-3cde-4812-b4c6-7537d5678ea1",
+              "port": "9b83a62c-1d15-4cc7-a9f0-d2a69f23e18c"
+            },
+            "target": {
+              "cell": "9b7e9419-50cf-4231-b67e-a770ded50f5e",
+              "port": "21957467-3e28-41dc-b843-3c4306c75ff8"
+            },
+            "vertices": [
+              {
+                "x": 748,
+                "y": 117
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null,
+                "strokeWidth": 2.5
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "15 · Puntajes publicados",
+              "description": "REST devuelve al tablero los puntajes autorizados para publicación.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": true,
+              "isPublicNetwork": false,
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "f96a9b0a-e009-4221-9307-d93bd7e466aa",
+                  "number": 1,
+                  "title": "Divulgación de datos internos",
+                  "type": "Information disclosure",
+                  "modelType": "STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "description": "La respuesta de REST al tablero podría incluir datos internos que no están autorizados para publicación.",
+                  "mitigation": "REST debe devolver únicamente los campos autorizados para publicación y los puntajes habilitados para publicarse.",
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
+                "64e9245f-fbb9-4333-a3da-4314e5b3cdc2"
+              ]
+            },
+            "labels": [
+              "15 · Puntajes publicados"
+            ],
+            "id": "16635b89-924b-409f-a6d0-05342c71fc4f",
+            "source": {
+              "cell": "9b7e9419-50cf-4231-b67e-a770ded50f5e",
+              "port": "5a3b234d-ed26-4de2-a69e-4eabbf8f79bd"
+            },
+            "target": {
+              "cell": "c448c70a-3cde-4812-b4c6-7537d5678ea1",
+              "port": "9b83a62c-1d15-4cc7-a9f0-d2a69f23e18c"
+            },
+            "vertices": [
+              {
+                "x": 907,
+                "y": 236
+              },
+              {
+                "x": 900,
+                "y": 137
               }
             ]
           }
@@ -2231,6 +2426,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
