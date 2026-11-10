@@ -2081,6 +2081,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2164,7 +2165,6 @@
               ]
             },
             "id": "ebad6d05-0538-466e-b394-89b020b87285",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
@@ -2313,7 +2313,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "14 · Consulta de puntajes",
+              "name": "14 - Consulta de puntajes",
               "description": "El tablero solicita a REST los puntajes destinados a publicación. La consulta es de solo lectura.",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2325,12 +2325,12 @@
               "protocol": "HTTPS",
               "threats": [],
               "trustBoundaryIds": [
-                "64e9245f-fbb9-4333-a3da-4314e5b3cdc2",
-                "c6eeb45a-99b9-4260-a73a-2472c1a78db7"
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
+                "64e9245f-fbb9-4333-a3da-4314e5b3cdc2"
               ]
             },
             "labels": [
-              "14 · Consulta de puntajes"
+              "14 - Consulta de puntajes"
             ],
             "id": "9911e5fa-8470-4dc0-b2a3-078d7f51240c",
             "source": {
@@ -2353,14 +2353,14 @@
             "attrs": {
               "line": {
                 "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
                 "sourceMarker": {
                   "name": ""
                 },
-                "strokeDasharray": null,
-                "strokeWidth": 2.5
+                "strokeDasharray": null
               }
             },
             "width": 200,
@@ -2369,7 +2369,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "15 · Puntajes publicados",
+              "name": "15 - Puntajes publicados",
               "description": "REST devuelve al tablero los puntajes autorizados para publicación.",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2399,7 +2399,7 @@
               ]
             },
             "labels": [
-              "15 · Puntajes publicados"
+              "15 - Puntajes publicados"
             ],
             "id": "16635b89-924b-409f-a6d0-05342c71fc4f",
             "source": {
