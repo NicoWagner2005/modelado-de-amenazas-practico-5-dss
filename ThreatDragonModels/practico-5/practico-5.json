@@ -2197,7 +2197,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "12 · Solicitud de puntajes",
+              "name": "12 - Solicitud de puntajes",
               "description": "El usuario solicita la página pública de puntajes.",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2213,7 +2213,7 @@
               ]
             },
             "labels": [
-              "12 · Solicitud de puntajes"
+              "12 - Solicitud de puntajes"
             ],
             "id": "917bf2b2-0f55-4e84-9bad-cdc0aa042b76",
             "source": {
@@ -2255,7 +2255,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "13 · Página de puntajes",
+              "name": "13 - Página de puntajes",
               "description": "El tablero devuelve la página con los puntajes publicados.",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2271,7 +2271,7 @@
               ]
             },
             "labels": [
-              "13 · Página de puntajes"
+              "13 - Página de puntajes"
             ],
             "id": "e1750f3c-c708-41e3-962d-0d36c26ef799",
             "source": {
