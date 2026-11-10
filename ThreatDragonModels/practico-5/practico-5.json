@@ -155,7 +155,9 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "917bf2b2-0f55-4e84-9bad-cdc0aa042b76"
+              ],
               "containedElements": [
                 "c448c70a-3cde-4812-b4c6-7537d5678ea1"
               ]
@@ -2169,6 +2171,60 @@
               "providesAuthentication": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "64e9245f-fbb9-4333-a3da-4314e5b3cdc2"
+              ]
+            },
+            "labels": [
+              ""
+            ],
+            "id": "917bf2b2-0f55-4e84-9bad-cdc0aa042b76",
+            "source": {
+              "x": 948,
+              "y": -125
+            },
+            "target": {
+              "cell": "c448c70a-3cde-4812-b4c6-7537d5678ea1",
+              "port": "19641857-b7d4-47df-af89-58ba635047e8"
+            },
+            "vertices": [
+              {
+                "x": 970,
+                "y": -40
+              }
+            ]
           }
         ]
       }
