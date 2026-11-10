@@ -2192,7 +2192,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "",
+              "name": "12",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2208,7 +2208,7 @@
               ]
             },
             "labels": [
-              ""
+              "12"
             ],
             "id": "917bf2b2-0f55-4e84-9bad-cdc0aa042b76",
             "source": {
