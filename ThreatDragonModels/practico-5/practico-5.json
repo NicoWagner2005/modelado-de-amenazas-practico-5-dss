@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
             "zIndex": -1,
+            "id": "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "LAN",
@@ -74,8 +74,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d0daa9a7-ee84-4142-ac97-6a9f55014db2",
             "zIndex": -1,
+            "id": "d0daa9a7-ee84-4142-ac97-6a9f55014db2",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Web local",
@@ -111,8 +111,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "403bc75a-64fb-4c8c-8f74-345d8e8d9227",
             "zIndex": -1,
+            "id": "403bc75a-64fb-4c8c-8f74-345d8e8d9227",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Mobile",
@@ -147,8 +147,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "64e9245f-fbb9-4333-a3da-4314e5b3cdc2",
             "zIndex": -1,
+            "id": "64e9245f-fbb9-4333-a3da-4314e5b3cdc2",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "WAN",
@@ -1936,7 +1936,7 @@
           {
             "position": {
               "x": 757,
-              "y": -47
+              "y": -46.99999999999991
             },
             "size": {
               "width": 140,
@@ -1944,7 +1944,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web app público"
+                "text": "Tablero web público"
               },
               "body": {
                 "stroke": "#333333",
@@ -1954,6 +1954,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -2037,10 +2038,9 @@
               ]
             },
             "id": "c448c70a-3cde-4812-b4c6-7537d5678ea1",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
-              "name": "Web app público",
+              "name": "Tablero web público",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
