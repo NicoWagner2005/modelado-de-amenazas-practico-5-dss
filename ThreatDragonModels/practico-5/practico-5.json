@@ -4,14 +4,24 @@
   "released_at": "",
   "summary": {
     "title": "practico-5",
-    "owner": "",
+    "owner": "Nicolás Wagner",
     "description": "",
     "id": 0
   },
   "detail": {
     "contributors": [],
-    "diagrams": [],
-    "diagramTop": 1,
+    "diagrams": [
+      {
+        "id": 1,
+        "title": "New generic diagram",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "version": "2.6.2",
+        "cells": []
+      }
+    ],
+    "diagramTop": 2,
     "reviewer": "",
     "threatTop": 0
   }
