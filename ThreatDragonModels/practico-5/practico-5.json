@@ -20,6 +20,45 @@
         "version": "2.6.2",
         "cells": [
           {
+            "position": {
+              "x": 639.9999999999989,
+              "y": 170.00000000000136
+            },
+            "size": {
+              "width": 490,
+              "height": 450
+            },
+            "attrs": {
+              "label": {
+                "text": "LAN"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "LAN",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "594730db-aa8a-49b9-839e-fe8a46fa394c",
+                "fef0aeb4-5d3f-43c8-b0d6-82d1ef0467d8",
+                "b5bccb18-d86d-4fa0-ba26-2c3950e975a8",
+                "f6ff5c43-59fe-4ee5-9337-41dea9392c1a",
+                "9618058c-1f41-478e-8511-02c6044f8390",
+                "3c1627d7-3d5e-4638-ba96-c51a5d5a37e0"
+              ],
+              "containedElements": [
+                "9b7e9419-50cf-4231-b67e-a770ded50f5e",
+                "ea903830-7b65-4b4d-8c1e-77ee4760a1e0",
+                "0966d01a-babd-4345-9387-bb5ab5082813"
+              ]
+            }
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -139,105 +178,6 @@
               {
                 "x": 534,
                 "y": 472
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 0,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "LAN",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "LAN"
-                  }
-                },
-                "position": {
-                  "distance": 0.48
-                }
-              }
-            ],
-            "id": "5a889215-772d-4eb6-a624-8ddf0cd43091",
-            "source": {
-              "x": 771,
-              "y": 43
-            },
-            "target": {
-              "x": 607,
-              "y": 683
-            },
-            "vertices": [
-              {
-                "x": 665,
-                "y": 162
-              },
-              {
-                "x": 598,
-                "y": 320
-              },
-              {
-                "x": 593,
-                "y": 502
-              }
-            ]
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 0,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "LAN",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              {
-                "attrs": {
-                  "label": {
-                    "text": "Trust Boundary"
-                  }
-                }
-              }
-            ],
-            "id": "cfce8d4a-4d5b-4692-8afe-d3f0302a230c",
-            "source": {
-              "x": 1013,
-              "y": 43
-            },
-            "target": {
-              "x": 1172,
-              "y": 679
-            },
-            "vertices": [
-              {
-                "x": 1090,
-                "y": 180
-              },
-              {
-                "x": 1145,
-                "y": 361
-              },
-              {
-                "x": 1165,
-                "y": 546
               }
             ]
           },
@@ -363,6 +303,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
                 "039e3cbb-6bbd-4b70-979c-1217267765a8"
               ]
             },
@@ -416,6 +357,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
                 "039e3cbb-6bbd-4b70-979c-1217267765a8"
               ]
             },
@@ -473,6 +415,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
                 "039e3cbb-6bbd-4b70-979c-1217267765a8"
               ]
             },
@@ -690,6 +633,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
                 "708add46-5705-4146-a8dc-bfef54aca181"
               ]
             },
@@ -744,6 +688,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
                 "708add46-5705-4146-a8dc-bfef54aca181"
               ]
             },
@@ -801,6 +746,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "c6eeb45a-99b9-4260-a73a-2472c1a78db7",
                 "708add46-5705-4146-a8dc-bfef54aca181"
               ]
             },
